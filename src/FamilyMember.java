@@ -1,8 +1,13 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 public class FamilyMember {
     private String name;
     private int age;
+    private Scanner family = new Scanner(System.in);
+    public FamilyMember(){
+
+    }
 
     public FamilyMember(String name, int age) {
         this.name = name;
@@ -41,10 +46,11 @@ public class FamilyMember {
 
     @Override
     public String toString() {
-        return "FamilyMember{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return "" +
+                "imię='" + name + '\'' +
+                ", wiek=" + age +
+                "";
     }
+
 
 }
