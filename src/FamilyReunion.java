@@ -10,14 +10,15 @@ public class FamilyReunion {
         for (int i = 0; i < familyReunion.length; i++) {
             System.out.println("Podaj dane: ");
             familyReunion[i] = createFamilyMember();
-           // for (i = 0; i < familyReunion.length; i++) {
-             //   if(createFamilyMember().equals(familyReunion[i]))
-                 //   System.out.println("Podałeś już dane tego członka rodziny. Podaj dane innego.");
-            //}
+            for (int j = 0; j < familyReunion.length; j++) ;
+            if (createFamilyMember().equals(createFamilyMember()))
+                System.out.println("Podałeś już dane tego członka rodziny. Podaj dane innego.");
+            i--;
         }
         String reunion = Arrays.toString(familyReunion);
         System.out.println(reunion);
     }
+
     static FamilyMember createFamilyMember() {
         Scanner family = new Scanner(System.in);
         FamilyMember familyMember = new FamilyMember();
