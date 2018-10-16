@@ -1,18 +1,16 @@
 import java.util.Objects;
-import java.util.Scanner;
 
 public class FamilyMember {
     private String name;
     private int age;
-    private Scanner family = new Scanner(System.in);
-    public FamilyMember(){
+
+   public FamilyMember(){
 
     }
-
     public FamilyMember(String name, int age) {
-        this.name = name;
+       this.name = name;
         this.age = age;
-    }
+   }
 
     public String getName() {
         return name;

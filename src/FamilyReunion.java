@@ -11,14 +11,14 @@ public class FamilyReunion {
             System.out.println("Podaj dane: ");
             familyReunion[i] = createFamilyMember();
 
-            for (int j = 0; j < familyReunion.length; j++) {
+            for (int j = 0; j < i; j++) {
                 if (familyReunion[j].equals(familyReunion[i])) {
                     System.out.println("Podałeś już dane tego członka rodziny. Podaj dane innego.");
                     i--;
+
                 }
             }
         }
-
         String reunion = Arrays.toString(familyReunion);
         System.out.println(reunion);
     }
